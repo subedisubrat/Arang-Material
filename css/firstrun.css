@@ -1,0 +1,21 @@
+.contentHolder{
+    width: 250px;
+    height: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+.branding{
+    text-align: center;
+    color: #887171;
+}
+.carousel {
+	font-size: 12px;
+}
+.branding h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: pacifico;
+}
+.btnContainer{
+    margin-top: 80px;
+}

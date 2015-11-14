@@ -1,0 +1,62 @@
+.userWrapper{
+    height: 180px;
+    background-color: #00a1ff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.tabHolder{
+    background:white;
+    font-size: 10px;
+    z-index: 100;
+    box-shadow: silver 0 10px 20px;
+}
+.userHolder{
+    padding: 16px;
+    padding-top: 46px;
+    color: white;
+    text-align: center;
+}
+.userHolder .userImg{
+    padding: 3px;
+    box-shadow: white 0 0 10px inset;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.userInfo{
+    text-align: left;
+}
+.userInfo h4{
+    font-size: 20px;
+    font-weight: 100;
+}
+.settings{
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    padding: 10px;
+    height: 44px;
+    border-radius: 100%;
+}
+#content_holder{
+    position: absolute;
+    margin-top: 220px;
+    padding: 1em;
+    width: 100%;
+    overflow: scroll;
+}
+.card{
+    height: 100px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.card-content{
+    padding: 0;
+    margin: 0;
+}
+#locate{
+    
+}
