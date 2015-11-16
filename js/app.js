@@ -3,5 +3,14 @@ var app = {
     version: '0.0.1',
     route: function(uri){
         $("#wrapper").load(uri);
+    },
+    user:{
+        name : 'sandesh'
+    },
+    q:{
+    
+    },
+    dataBase:{
+        
     }
 }

@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("#wrapper").load("firstrun.html");
+    $("#wrapper").load("yatru.html");
 });
