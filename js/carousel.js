@@ -1,7 +1,7 @@
 $("#continue").click(function(){
     $("#content_wrapper").addClass("animated zoomOut");
     setTimeout(function(){
-        app.route('setup.html');
+        $("#wrapper").load("yatru.html");
     }, 400);
 });
 $("#exitbtn").click(function(){

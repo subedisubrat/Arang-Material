@@ -9,3 +9,10 @@ var tot = window.innerHeight;
 var n = tot - 220;
 n = n + "px";
 $("#content_holder").css({"height":n});
+
+$("#settingBtn").click(function(){
+    $("#content_wrapper").addClass("animated fadeOut");
+    setTimeout(function(){
+        $("#wrapper").load('settings.html');
+    }, 400);
+});

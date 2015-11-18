@@ -19,6 +19,15 @@
     color: white;
     text-align: center;
 }
+.backlay{
+    position: absolute;
+    top: -10%;
+    left: -10px;
+    width: 120%;
+    height: 190px;
+    -webkit-filter: blur(2px);
+    z-index: -10;
+}
 .userHolder .userImg{
     padding: 3px;
     box-shadow: white 0 0 10px inset;
@@ -30,7 +39,7 @@
 }
 .userInfo h4{
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
 }
 .settings{
     position: absolute;
