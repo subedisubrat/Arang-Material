@@ -11,7 +11,7 @@ n = n + "px";
 $("#content_holder").css({"height":n});
 
 $("#settingBtn").click(function(){
-    $("#content_wrapper").addClass("animated slideOutLeft");
+    $("#wrapper").addClass("animated zoomOut");
     setTimeout(function(){
         $("#wrapper").load('settings.html');
     }, 600);
