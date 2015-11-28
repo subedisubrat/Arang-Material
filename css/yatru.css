@@ -1,28 +1,38 @@
 .userWrapper{
     height: 180px;
-    background-color: #00a1ff;
+    background: url('../img/flat_geometry_wallpaper_b_by_charlie_henson-d8ybuth.png') fixed;
+    background-size: contain;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 100;
+    outline: none;
 }
 .tabHolder{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    outline: none;
     background:white;
     font-size: 10px;
     z-index: 100;
     box-shadow: silver 0 10px 20px;
 }
 .userHolder{
-    padding: 16px;
+    outline: none;
+    width: 100%;
     padding-top: 46px;
     color: white;
+    text-align: center;
+    font-family: roboto;
     text-align: center;
 }
 .backlay{
     position: absolute;
     top: -10%;
     left: -10px;
+    background:rgba(255, 255, 255, .3);
     width: 120%;
     height: 190px;
     -webkit-filter: blur(2px);

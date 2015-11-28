@@ -11,9 +11,16 @@
     </li>
 </ul>
 <div class = center>
-    <a class="center btn-floating btn-small waves-effect waves-light red right">+</a>
+    <a class="center btn-floating btn-small waves-effect waves-light red right" id = 'newTravelBtnd'>+</a>
 </div>
-
+<script>
+    $("#newTravelBtnd").click(function(){
+        $("#modalBackLays").fadeIn();
+        $("#overlay_screen").show();
+        $("#overlay_screen").removeClass("zoomOut");
+        $("#overlay_screen").load("VehicleInfo.html");
+    });
+</script>
 <style>
     .center{
         color: white;

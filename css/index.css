@@ -14,3 +14,90 @@ body{
 .silver{
     color: silver;
 }
+.numpadAlpha{
+    width: 100%;
+    background: white;
+}
+.numpadAlpha .key{
+    border: 1px solid #00a1ff;
+    padding: 3px;
+    font-size: 15px;
+    width: 40%;
+    float: left;
+    margin: 3px;
+    height: 30px;
+    border-radius: 30px;
+}
+.smallFonts{
+    font-size: 12px;
+}
+.hero{
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    height: 10px;
+    text-align: center;
+}
+.hero .dot{
+    margin: auto;
+    margin-left: 5px;
+    border: 2px solid grey;
+    float: left;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+.hero .filled{
+    background: grey;
+}
+.hidden{
+    display: none;
+}
+#modal_noclose_err{
+    background: white;
+    padding: 20px;
+    width: 90%;
+    border-radius: 3px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+#modalBackLays{
+    position: fixed;
+    z-index: 999;
+    background: rgba(20, 20, 20, .4);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+#modalBackLays #overlay_screen{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+    background: #f1f1f1;
+    animation-duration: .3s;
+}
+#modalBackLay #modal{
+    margin: 20px auto;
+    position: relative;
+    background: white;
+    height: 300px;
+    width: 90%;
+    border-radius: 3px;
+}
+#modalBackLay #modalProcess{
+    background: white;
+    height: 250px;
+    width: 80%;
+    border-radius: 3px;
+    margin: 30px auto;
+    
+    padding: 20px;
+}
+.fast{
+    animation-duration: .1s;
+}

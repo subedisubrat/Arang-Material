@@ -3,6 +3,7 @@ $("#max").click(function(){
         $("#wrapper").load("carousel.html");
     }, 200);
 });
-if(!navigator.onLine){
-    alert("offline?");
+if(!navigator.onLine){/*
+    $("#modalBackLays").fadeIn();
+    $("#modal_noclose_err").show();*/
 }

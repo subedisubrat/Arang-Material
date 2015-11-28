@@ -5,14 +5,16 @@ $(".button-collapse").click(function(){
 });
 $("#content_holder").load("listBuses.html");
 $('ul.tabs').tabs();
+$(document).ready(function(){
+    
 var tot = window.innerHeight;
 var n = tot - 220;
 n = n + "px";
 $("#content_holder").css({"height":n});
+})
 
 $("#settingBtn").click(function(){
-    $("#wrapper").addClass("animated zoomOut");
-    setTimeout(function(){
-        $("#wrapper").load('settings.html');
-    }, 600);
+    $("#modalBackLays").fadeIn();
+    $("#overlay_screen").show();
+    $("#overlay_screen").load("settings.html");
 });

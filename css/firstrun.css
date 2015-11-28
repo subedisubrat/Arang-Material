@@ -3,6 +3,7 @@
     height: 400px;
     margin: 100px auto;
     text-align: center;
+    -webkit-transform: rotateZ(360deg);
 }
 .branding{
     text-align: center;
