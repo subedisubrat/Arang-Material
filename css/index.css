@@ -100,4 +100,5 @@ body{
 }
 .fast{
     animation-duration: .1s;
+    -webkit-animation-duration: .15s;
 }
