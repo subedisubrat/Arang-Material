@@ -1,5 +1,45 @@
-<link rel = stylesheet href = 'css/animate.css' />
-<div class = 'animated slideInRight'>okok</div>
-<script>
-    
-</script>
+<div id = 'content_wrapper'>
+    <nav class = 'center'>
+        चालकको नाम
+    </nav>
+    <div id = 'content'>
+        <div class = 'card'>
+            <div class = 'card-content row s12'>
+                <div class = 'col s3'>
+                    <img src = 'img/logo.png' width = 80/>
+                </div>
+                <div class = 'col s1'>&nbsp;</div>
+                <div class = 'col s8'>
+                    <div id = 'vehicleName'>
+                        सन्देशको गाडि
+                    </div>
+                    <br />
+                    <div id = 'serviceOf' class = 'smallFonts'>
+                        ट्रिनिटि ईन्टरनेशनल कलेज
+                    </div>
+                    <br />
+                    <div class = 'smallFonts'>
+                        जाम भएको
+                    </div>
+                    <br />
+                    <div id = 'currentStatus'>
+                        <div class="switch">
+                            <label>
+                            छ
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            छैन
+                            </label>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div class = 'btn red col s8 waves-effect waves-light center'>Update Location</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        $.getScript("js/driver.js");
+    </script>
+</div>

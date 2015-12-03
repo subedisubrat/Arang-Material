@@ -1,0 +1,10 @@
+$("#submitBtn").click(function(){
+    app.netInfo();
+    if(allValues){
+        $("#modalBackLays").fadeIn();
+        $("#modalProcess").show();
+    }
+    else{
+        shakeem();
+    }
+});

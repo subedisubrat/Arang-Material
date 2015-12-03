@@ -13,13 +13,13 @@
 <div class = center>
     <a class="center btn-floating btn-small waves-effect waves-light red right" id = 'newTravelBtnd'>+</a>
 </div>
-<script>
-    $("#newTravelBtnd").click(function(){
-        $("#modalBackLays").fadeIn();
-        $("#overlay_screen").show();
-        $("#overlay_screen").removeClass("zoomOut");
-        $("#overlay_screen").load("VehicleInfo.html");
-    });
+<script>  
+$("#newTravelBtnd").click(function(){
+    $("#modalBackLays").fadeIn();
+    $("#overlay_screen").removeClass("zoomOut");
+    $("#overlay_screen").load("vehicleinfo.html");
+    $("#overlay_screen").show();
+});
 </script>
 <style>
     .center{

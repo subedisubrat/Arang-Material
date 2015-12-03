@@ -63,8 +63,9 @@ body{
 }
 
 #modalBackLays{
+    overflow: hidden;
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     background: rgba(20, 20, 20, .4);
     width: 100%;
     height: 100%;
@@ -89,16 +90,13 @@ body{
     width: 90%;
     border-radius: 3px;
 }
-#modalBackLay #modalProcess{
+#modalProcess{
     background: white;
-    height: 250px;
-    width: 80%;
-    border-radius: 3px;
-    margin: 30px auto;
-    
+    position: absolute;
+    height: 120px;
     padding: 20px;
-}
-.fast{
-    animation-duration: .1s;
-    -webkit-animation-duration: .15s;
+    top: 20%;
+    border-radius: 3px;
+    width: 80%;
+    left: 10%;
 }

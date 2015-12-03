@@ -1,26 +1,18 @@
 var app = {
     name: 'Arang',
-    version: '0.0.1',
+    version: '1.0',
     buildName: 'Anuva',
-    route: function(uri){
-        $("#wrapper").load(uri);
+    user: {
+        name : localStorage.getItem('user_name'),
+        type : localStorage.getItem('user_type'),
+        premium : localStorage.getItem('user_premium'),
+        id : localStorage.getItem('user_id'),
+        image : localStorage.getItem('user_image')
     },
-    user:{
-        name : 'sandesh',
-        type : 'passanger',
-        premium : false,
-        id : 20198,
-        image : 'file:///c:/sandesh.jpg'
-    },
-    query:function(){
-        
-    },
-    store:{
-        function get(query){
-            return (localStorage.getItem(query));
-        },
-        function set(query){
-            localStorage.setItem(query);
+    netInfo: function(){
+        if(!navigator.onLine){
+            $("#modalBackLays").fadeIn();
+            $("#modal_noclose_err").show();
         }
     }
-}
+};

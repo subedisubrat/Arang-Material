@@ -1,17 +1,11 @@
-$(".button-collapse").sideNav();
-$("#sidenav-overlay").remove();
-$(".button-collapse").click(function(){
-    $("#sidenav-overlay").remove();
-});
+$(document).ready(function(){
 $("#content_holder").load("listBuses.html");
 $('ul.tabs').tabs();
-$(document).ready(function(){
-    
 var tot = window.innerHeight;
 var n = tot - 220;
 n = n + "px";
 $("#content_holder").css({"height":n});
-})
+});
 
 $("#settingBtn").click(function(){
     $("#modalBackLays").fadeIn();
