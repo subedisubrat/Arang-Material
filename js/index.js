@@ -4,11 +4,11 @@ $(document).ready(function(){
         $("#wrapper").load("setup.html");
     }
     else{
-        if(app.user.type == 0){
-            $("#wrapper").load("yatru.html");
+        if(app.user.type){
+            $("#wrapper").load("../yatru.html");
         }
         else{
-            $("#wrapper").load("driver.html");
+            $("#wrapper").load("../driver.html");
         }
     }
 });

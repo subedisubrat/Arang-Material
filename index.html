@@ -31,7 +31,13 @@
                     </div>
                     <div class = 'card-action'>
                         <br />
-                        <div class = 'btn btn-small waves-effect waves-light'>close</div>
+                        <div class = 'btn btn-small waves-effect waves-light' id='modalCloseBtn'>close</div>
+                        <script>
+                            $("#modalCloseBtn").click(function(){
+                                $("#modalBackLays").fadeOut();
+                                $("#modal").hide();
+                            });
+                        </script>
                     </div>
                 </div>
                 <div id = 'modalInfo' class = 'animated zoomIn hidden fast'>
@@ -43,7 +49,7 @@
                         This will close automatically when complete
                     </div>
                     <br />
-                    <img src = 'img/loader_profile.gif' width="32" class = 'center' />
+                    <img src = 'img/loader_profile.gif'/>
                 </div>
                 <div id = 'overlay_screen' class = 'animated zoomIn hidden fast'>
 

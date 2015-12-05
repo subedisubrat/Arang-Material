@@ -6,8 +6,7 @@ var app = {
         name : localStorage.getItem('user_name'),
         type : localStorage.getItem('user_type'),
         premium : localStorage.getItem('user_premium'),
-        id : localStorage.getItem('user_id'),
-        image : localStorage.getItem('user_image')
+        id : localStorage.getItem('user_id')
     },
     netInfo: function(){
         if(!navigator.onLine){

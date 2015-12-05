@@ -22,15 +22,33 @@ $("#submitBtn").click(function(){
                 console.log("successful query! ");
                 if(data.length == 0){
                     console.log("no users found! ");
+                    
+                    $("#modalBackLays").fadeIn();
+                    $("#modal").show();
                 }
                 else{
                     $("#modalBacjLays").fadeIn();
                     console.log("User found! :)");
+                    
+                    var uid = data[0].id;
+                    
+                    localStorage.setItem("user_name", un);
+                    localStorage.setItem("user_type", typese);
+                    localStorage.setItem("user_id", uid);
+                    
+                    if(typese == 0){
+                        $("#wrapper").load("../yatru.html");
+                    }
+                    else{
+                        $("#wrapper").load("../driver.html");
+                    }
                 }
             },
             error: function(errdata){
                 $("#modalBackLays").fadeOut();
                 $("#modalProcess").fadeOut();
+                    $("#modalBackLays").fadeIn();
+                    $("#modal").show();
                 app.netInfo();
                 console.log("un - successful query!");
             }
