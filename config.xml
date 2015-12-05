@@ -16,5 +16,14 @@
     <author href="https://sandeshbhusal.com.np" email="sandeshbhusal@outlook.com">
         BitKnit technologies 
     </author>
-
+    <platform name="android">
+        <preference name="phonegap-version" value="4.0.2" />
+        <preference name="orientation" value="portrait" />
+        
+        <icon src="LauncherIcons/mipmap-hdpi/ic_launcher.png" gap:platform="android" gap:density="hdpi" />
+        <icon src="LauncherIcons/mipmap-mdpi/ic_launcher.png" gap:platform="android" gap:density="mdpi" />
+        <icon src="LauncherIcons/mipmap-xhdpi/ic_launcher.png" gap:platform="android" gap:density="xhdpi" />
+        <icon src="LauncherIcons/mipmap-xxhdpi/ic_launcher.png" gap:platform="android" gap:density="xxhdpi" />
+        <icon src="LauncherIcons/mipmap-xxxhdpi/ic_launcher.png" gap:platform="android" gap:density="xxxhdpi" />
+    </platform>
 </widget>

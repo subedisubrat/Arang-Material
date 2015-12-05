@@ -14,20 +14,6 @@ body{
 .silver{
     color: silver;
 }
-.numpadAlpha{
-    width: 100%;
-    background: white;
-}
-.numpadAlpha .key{
-    border: 1px solid #00a1ff;
-    padding: 3px;
-    font-size: 15px;
-    width: 40%;
-    float: left;
-    margin: 3px;
-    height: 30px;
-    border-radius: 30px;
-}
 .smallFonts{
     font-size: 12px;
 }
@@ -52,6 +38,14 @@ body{
 }
 .hidden{
     display: none;
+}
+#modal{
+    background: white;
+    padding: 20px;
+    width: 90%;
+    border-radius: 3px;
+    margin: 150px auto;
+    text-align: center;    
 }
 #modal_noclose_err{
     background: white;

@@ -6,11 +6,11 @@ $("#max").click(function(){
 });
 $("#magix").click(function(){
     if(clickCount == 6){
-        $("#magix").addClass("animated slideOutRight");
+        $("#magix").addClass("animated zoomOut");
         setTimeout(function(){
-            $("#magix").html(app.buildName + " "+ app.version);
-            $("#magix").removeClass("slideOutRight");
-            $("#magix").addClass("slideInLeft");
+            $("#magix").html(app.buildName);
+            $("#magix").removeClass("zoomOut");
+            $("#magix").addClass("zoomIn");
         }, 1000);
     }
     else{

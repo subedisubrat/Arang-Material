@@ -8,14 +8,24 @@
             Arang can also help you find new vehicles when on strange routes.
             <br />
             This app uses certain device features. For more information, read the official privacy policy.
-            If you agree to abide by it, Tap continue.
+            If you agree to abide by it, Tap agree then continue.
+            <br />
+            
+            <div class="input-field max">
+                <input id="icon_prefix" type="checkbox" checked class="validate">
+                <label for="icon_prefix">I agree to the terms and condtions.</label>
+            </div>
+            <br />
+            <script>
+                $("#icon_prefix").click(function(){
+                    $(".card-action").slideToggle();
+                });
+            </script>
         </div>
         <div class = 'card-action'>
             <a id = 'continue'>Continue</a>
-            <a id = 'exitbtn'>Exit</a>
-            <br />
-            <br />
         </div>
+        <input type = checkbox />
     </div>
    <script>
         $.getScript("js/app.js");
