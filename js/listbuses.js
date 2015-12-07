@@ -1,7 +1,7 @@
 if(Parse){
     var userLat = 0;
     var userLng = 0;
-    var geo = navigator.geoLocation.getCurrentPosition(setPosition);
+    navigator.geolocation.getCurrentPosition(setPosition);
     function setPosition(geoData){
         userLat = geoData.coords.latitude;
         userLng = geoData.coords.longitude;
@@ -16,9 +16,19 @@ if(Parse){
             var rs = result.get("RouteStart");
             var re = result.get("RouteEnd");
             var st = result.get("Jammed");
+            var oldlat = result.get("LatOld");
+            var newlat = result.get("LatNew");
+            var oldlng = result.get("LngOld");
+            var newlng = result.get("LngNew");
+            
+            var oldLoc = new google.maps.LatLng(oldlat, oldlng);
+            var newLoc = new google.maps.LatLng(newlat, newlng);
+            var userPos = new google.maps.LatLng(userLat, userLng)
+            
+            console.log(newLoc);
             
             var from = new google.maps.LatLng(27.700769, 85.300140);
-            var to   = new google.maps.LatLng(27.6833333, 84.4333333);
+            var to   = new google.maps.LatLng(userLat, userLng);
             var dist = google.maps.geometry.spherical.computeDistanceBetween(from, to);
             dist = dist / 1000;
             dist = Math.floor(dist);
