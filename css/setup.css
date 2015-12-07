@@ -13,7 +13,7 @@
     position: absolute;
 }
 .card-top{
-    background: #00a1ff;
+    background: #F15A24;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,6 +33,7 @@
     left: 5%;
     padding: 16px;
     box-shadow: silver 0 1px 1px;
+    color: #000000;
 }
 hr{
     border: none;
