@@ -58,7 +58,7 @@ $("#submitBtn").click(function(){
         });
     }
     else{
-        console.log("ONe of the fields appears to be empty");
+        console.log("One of the fields appears to be empty");
         if(!un){
             console.log("username is the guilty one!");
             $("#username").addClass("animated shake");
@@ -67,7 +67,7 @@ $("#submitBtn").click(function(){
             }, 1000);
         }
         else{
-            console.log("password is the guilty one!");
+            console.log("Password is the guilty one!");
             $("#password").addClass("animated shake");
             setTimeout(function(){
                 $("#password").removeClass("shake");
