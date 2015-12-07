@@ -2335,7 +2335,7 @@ td, th {
     .collection .collection-item:last-child {
       border-bottom: none; }
     .collection .collection-item.active {
-      background-color: #F15A24;
+      background-color: #FFCCBC;
       color: #eafaf9; }
       .collection .collection-item.active .secondary-content {
         color: #fff; }
@@ -2360,7 +2360,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #F15A24; }
+  color: #F28F93; }
 
 .collapsible .collection {
   margin: 0;
@@ -6766,7 +6766,7 @@ form p:last-child {
   height: 0; }
 
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1; }
+  background-color: #ffccbc; }
 
 .switch label input[type=checkbox]:checked + .lever:after {
   background-color: #F15A24; }
