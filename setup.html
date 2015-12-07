@@ -1,0 +1,46 @@
+<div class = ' animated zoomIn large' style="animation-duration: .4s;" id = 'content_wrapper'>
+    <div class = 'cards-content'>
+        <div class = 'card-top'>
+            <div class = 'cards-title'>
+                Setup Your Account
+            </div><br />
+            Seems like your account has not been set up yet. Follow the instructions below to get going.
+            <br /><br />
+        </div>
+        <div class = 'formContent'>
+            Choose Your Identity Type:<br /><br />
+            <p class = 'waves-effect'>
+                <input name="group1" type="radio" id="passanger" selected />
+                <label for="passanger">Passanger</label>
+            </p>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <p class = 'waves-effect'>
+                <input name="group1" type="radio" id="driver" />
+                <label for="driver">Driver</label>
+            </p>
+            <br />
+            <br />
+            Punch in your Credentials  
+            <div class="row">
+            <div class="input-field">
+            <i class="material-icons prefix"><img src = 'img/User-24.png' /></i>
+            <input id="username" type="text" class="validate">
+            <label for="username">User Name</label>
+            </div>
+            <div class="input-field">
+            <i class="material-icons prefix"><img src = 'img/Key%202-24.png' /></i>
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+            </div>
+            </div>
+            <div class = 'row'>
+                <a class="col-s12 btn-flat btn waves-effect waves-light" id = 'submitBtn'>Proceed &nbsp; &rarr;</a>
+            </div>
+            <br />
+        </div>
+    </div>
+<link rel = stylesheet href = 'css/setup.css' />
+    <script>
+        $.getScript("js/setup.js");
+    </script>
+</div>

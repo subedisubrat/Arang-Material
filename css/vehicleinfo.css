@@ -1,0 +1,23 @@
+#searchBar{
+    text-align: center;
+    padding: 20px;
+}
+#searchBox{
+    background: white;
+    margin: auto;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: silver 0px 1px 1px;
+}
+#nextCarousel{
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: -3px;
+    width: 20px;
+    height: 20px;
+}
+#resBox{
+    padding: 10px;
+}

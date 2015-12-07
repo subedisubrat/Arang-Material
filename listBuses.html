@@ -1,0 +1,37 @@
+<ul class="collection">
+    <li class="collection-item avatar waves-effect waves-blue" data-id = '120'>
+      <img src="img/Bus-50.png" alt="" class="circle">
+      <span class="title" id='sp_id'>Nepal Yatayat</span>
+      <p id = 'sp_route'>Runs Mulpani to Purano Buspark <br>
+         <b id = 'location_id'>Status</b>&nbsp; &rarr; &nbsp;<b id = 'jam_stat'>Jam</b>
+          <br />
+          11km <b>Approaching you.</b> 
+      </p>
+      <a href="#!" class="secondary-content"><img src = 'img/Star%20Filled-24.png' /></a>
+    </li>
+</ul>
+<div class = center>
+    <a class="center btn-floating btn-small waves-effect waves-light red right" id = 'newTravelBtnd'>+</a>
+</div>
+<script>  
+$("#newTravelBtnd").click(function(){
+    $("#modalBackLays").fadeIn();
+    $("#overlay_screen").removeClass("zoomOut");
+    $("#overlay_screen").load("vehicleinfo.html");
+    $("#overlay_screen").show();
+});
+</script>
+<style>
+    .center{
+        color: white;
+    }
+    .collection-item {
+	   width: 100%;
+    }
+    .collection-item p{
+        font-size: 10px;
+    }
+</style>
+<script>
+    $.getScript("../js/listbuses.js");
+</script>
