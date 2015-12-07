@@ -1,13 +1,12 @@
 <ul class="collection">
     <li class="collection-item avatar waves-effect waves-blue" data-id = '120'>
-      <img src="img/Bus-50.png" alt="" class="circle">
-      <span class="title" id='sp_id'>Nepal Yatayat</span>
-      <p id = 'sp_route'>Runs Mulpani to Purano Buspark <br>
-         <b id = 'location_id'>Status</b>&nbsp; &rarr; &nbsp;<b id = 'jam_stat'>Jam</b>
-          <br />
-          11km <b>Approaching you.</b> 
-      </p>
-      <a href="#!" class="secondary-content"><img src = 'img/Star%20Filled-24.png' /></a>
+        <img src="img/Bus-50.png" alt="" class="circle">
+        <span class="title" id='sp_id'>Nepal Yatayat</span>
+        <div class = 'fs'>
+            <div id = 'sp_route'></div>
+            <div id = 'sp_jamstat' class = 'left'>Running</div>&nbsp;
+            <div id = 'distance' class = 'left'>11km</div>
+        </div>
     </li>
 </ul>
 <div class = center>
@@ -28,8 +27,11 @@ $("#newTravelBtnd").click(function(){
     .collection-item {
 	   width: 100%;
     }
-    .collection-item p{
+    .fs{
         font-size: 10px;
+    }
+    #distance{
+        margin-left: 20px;
     }
 </style>
 <script>
