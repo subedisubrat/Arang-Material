@@ -5,12 +5,12 @@ $("#submitBtn").click(function(){
     var pas = $("#password").val();
     console.log("GOT USERNAME "+un+" AND PASSWORD "+pas);
     if(un && pas){
-        console.log("USERNAME AND PasSWORD Non empty, checking with servers");
+        console.log("Username and Password are non-empty, checking with servers");
         // Validate with server;
         var user = Parse.Object.extend("Users");
         console.log("Extending the parse users class");
         var query = new Parse.Query(user);
-        console.log('creating a new query and executing...');
+        console.log('Creating a new query and executing...');
         query.equalTo("Name", un);
 
         $("#modalBackLays").fadeIn();
@@ -21,7 +21,7 @@ $("#submitBtn").click(function(){
                 $("#modalProcess").fadeOut();
                 console.log("successful query! ");
                 if(data.length == 0){
-                    console.log("no users found! ");
+                    console.log("No users found! ");
                     
                     $("#modalBackLays").fadeIn();
                     $("#modal").show();
